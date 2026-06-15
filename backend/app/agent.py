@@ -63,16 +63,19 @@ def sanitize_output(new_messages, agent_name):
     return [sanitized_msg]
 
 def triage_node(state: AgentState):
+    print("\n--- \033[94m[Workflow Trace] Entering Triage Agent\033[0m ---")
     result = triage_agent.invoke({"messages": state["messages"]})
     new_messages = result["messages"][len(state["messages"]):]
     return {"messages": sanitize_output(new_messages, "Triage")}
 
 def policy_node(state: AgentState):
+    print("\n--- \033[93m[Workflow Trace] Entering Policy Agent\033[0m ---")
     result = policy_agent.invoke({"messages": state["messages"]})
     new_messages = result["messages"][len(state["messages"]):]
     return {"messages": sanitize_output(new_messages, "Policy")}
 
 def action_node(state: AgentState):
+    print("\n--- \033[92m[Workflow Trace] Entering Action Agent\033[0m ---")
     result = action_agent.invoke({"messages": state["messages"]})
     new_messages = result["messages"][len(state["messages"]):]
     if new_messages:
@@ -97,9 +100,17 @@ def is_internal(state):
         content = "".join([b.get("text", "") for b in content if isinstance(b, dict) and "text" in b])
     return "[INTERNAL]" in content
 
+def route_from_triage(state):
+    print("--- \033[95m[Workflow Trace] Evaluating Triage Output\033[0m ---")
+    if is_internal(state):
+        print("--- \033[95m[Workflow Trace] Routing: Triage -> Policy\033[0m ---")
+        return "Policy"
+    print("--- \033[95m[Workflow Trace] Routing: Triage -> END (User Response)\033[0m ---")
+    return END
+
 workflow.add_conditional_edges(
     "Triage",
-    lambda state: "Policy" if is_internal(state) else END
+    route_from_triage
 )
 workflow.add_edge("Policy", "Action")
 workflow.add_edge("Action", END)
