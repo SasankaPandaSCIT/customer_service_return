@@ -1,0 +1,269 @@
+{
+  "customers": [
+    {
+      "customer_id": "C001",
+      "name": "Alice Smith",
+      "email": "alice@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1001",
+          "item_name": "Wireless Earbuds",
+          "category": "Electronics",
+          "purchase_date": "2026-06-05",
+          "amount": 129.99,
+          "status": "Delivered"
+        },
+        {
+          "order_id": "ORD-1002",
+          "item_name": "Clearance T-Shirt",
+          "category": "Final Sale",
+          "purchase_date": "2026-05-15",
+          "amount": 15.00,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C002",
+      "name": "Bob Jones",
+      "email": "bob@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1003",
+          "item_name": "Denim Jeans",
+          "category": "Clothing",
+          "purchase_date": "2026-05-25",
+          "amount": 59.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C003",
+      "name": "Charlie Brown",
+      "email": "charlie@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1004",
+          "item_name": "Gaming Mouse",
+          "category": "Electronics",
+          "purchase_date": "2026-05-20",
+          "amount": 49.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C004",
+      "name": "David Clark",
+      "email": "david@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1005",
+          "item_name": "Photo Editor Pro",
+          "category": "Software",
+          "purchase_date": "2026-06-10",
+          "amount": 199.99,
+          "status": "Delivered"
+        },
+        {
+          "order_id": "ORD-2005",
+          "item_name": "Casual Shirt",
+          "category": "Clothing",
+          "purchase_date": "2026-06-05",
+          "amount": 29.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C005",
+      "name": "Eve Davis",
+      "email": "eve@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1006",
+          "item_name": "Winter Coat",
+          "category": "Clothing",
+          "purchase_date": "2026-05-01",
+          "amount": 149.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C006",
+      "name": "Frank Evans",
+      "email": "frank@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1007",
+          "item_name": "Smartwatch",
+          "category": "Electronics",
+          "purchase_date": "2026-06-08",
+          "amount": 299.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C007",
+      "name": "Grace Ford",
+      "email": "grace@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1008",
+          "item_name": "Running Shoes",
+          "category": "Clothing",
+          "purchase_date": "2026-06-03",
+          "amount": 89.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C008",
+      "name": "Heidi Gomez",
+      "email": "heidi@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1009",
+          "item_name": "Graphic Tee",
+          "category": "Final Sale",
+          "purchase_date": "2026-06-11",
+          "amount": 12.50,
+          "status": "Delivered"
+        },
+        {
+          "order_id": "ORD-2009",
+          "item_name": "USB-C Cable",
+          "category": "Electronics",
+          "purchase_date": "2026-06-10",
+          "amount": 15.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C009",
+      "name": "Ivan Harris",
+      "email": "ivan@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1010",
+          "item_name": "Antivirus 1yr",
+          "category": "Software",
+          "purchase_date": "2026-06-12",
+          "amount": 39.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C010",
+      "name": "Judy Iles",
+      "email": "judy@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1011",
+          "item_name": "Bluetooth Speaker",
+          "category": "Electronics",
+          "purchase_date": "2026-05-28",
+          "amount": 79.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C011",
+      "name": "Mallory King",
+      "email": "mallory@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1012",
+          "item_name": "Yoga Pants",
+          "category": "Clothing",
+          "purchase_date": "2026-05-15",
+          "amount": 34.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C012",
+      "name": "Niaj Lewis",
+      "email": "niaj@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1013",
+          "item_name": "4K Monitor",
+          "category": "Electronics",
+          "purchase_date": "2026-06-12",
+          "amount": 349.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C013",
+      "name": "Olivia Martin",
+      "email": "olivia@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1014",
+          "item_name": "Summer Dress",
+          "category": "Clothing",
+          "purchase_date": "2026-05-12",
+          "amount": 45.00,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C014",
+      "name": "Peggy Nelson",
+      "email": "peggy@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1015",
+          "item_name": "Clearance Mug",
+          "category": "Final Sale",
+          "purchase_date": "2026-06-03",
+          "amount": 5.99,
+          "status": "Delivered"
+        },
+        {
+          "order_id": "ORD-2015",
+          "item_name": "Wool Socks",
+          "category": "Clothing",
+          "purchase_date": "2026-06-08",
+          "amount": 12.99,
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "customer_id": "C015",
+      "name": "Sybil Owens",
+      "email": "sybil@example.com",
+      "orders": [
+        {
+          "order_id": "ORD-1016",
+          "item_name": "Cloud Storage 1yr",
+          "category": "Software",
+          "purchase_date": "2026-05-10",
+          "amount": 99.99,
+          "status": "Delivered"
+        },
+        {
+          "order_id": "ORD-2016",
+          "item_name": "Wireless Keyboard",
+          "category": "Electronics",
+          "purchase_date": "2026-06-05",
+          "amount": 45.00,
+          "status": "Delivered"
+        }
+      ]
+    }
+  ]
+}
